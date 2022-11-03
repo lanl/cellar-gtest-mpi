@@ -1,0 +1,8 @@
+@PACKAGE_INIT@
+
+find_package(GTest REQUIRED)
+find_package(MPI REQUIRED)
+
+include("${CMAKE_CURRENT_LIST_DIR}/gtest-mpi-libTargets.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/gtest-mpi-mainTargets.cmake")
+check_required_components("@PROJECT_NAME@")
